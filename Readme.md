@@ -44,4 +44,10 @@ body {
 
 
     Main Image-  
-https://s-media-cache-ak0.pinimg.com/originals/99/4e/ab/994eab3066dbb997d3cd69a744d2225b.jpg
+    [Restaurant Interior](https://s-media-cache-ak0.pinimg.com/originals/99/4e/ab/994eab3066dbb997d3cd69a744d2225b.jpg)
+
+    Logo-
+
+    We can change the name of the restaurant and everything, important part is
+    the link itself. Quick and easy (and free!) logo builder.
+    [Free Logo Services](https://www.freelogoservices.com/step2)
