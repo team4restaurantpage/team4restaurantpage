@@ -1,55 +1,47 @@
-# Installation
-
-#### Prerequisites
-
-Make sure you have an up to date installation of `npm`
-with `brew update` followed by either `brew install npm` or `brew upgrade npm`.
-
-Then use npm to install the following apps with `npm install -g $APP_NAME`
-* `gulp-cli`
-* `surge`
-
-Finally, I would strongly encourage you to install the `newapp` script from [here][newapp].
-
-[newapp]: https://gist.github.com/kingcons/a25733c233faf10847cbb4ff557e6843
-
-# Usage
-
-#### If you are using the `newapp` tool
-
-*NOTE:* If you do not use a lowercased project/folder name, the automatic deploy to surge with `npm run deploy` will fail as surge.sh always expects lowercased names.
-
-1. Run `$ newapp template <project name>`
-2. Change in to your new project
-3. Initialize Git `$ git init`
-4. Build
-
-#### If you are NOT using the `newapp` tool
-
-1. Clone down this repo
-2. Rename and change into the project folder
-3. Remove `git` from it `$ rm -rf .git`
-4. Initialize Git `$ git init`
-5. Install the dependencies `$ npm install`
-6. Build 
+-------------------------------------------------------------------------------
+Styling Notes:
+  Flex Box-
 
 
-# Features
+! May need to change the HTML structure if we are going to use 'display: flex' !
 
-This template features a couple different tools. First it utalizes both NPM and Gulp for different tasks.
+    -Maybe use 'display: flex' on the body and see if we can 'nest' it into
+    each child container of the main body.
 
-## Gulp Tasks
+example:
 
-All tasks are listed below, but ideally you will just need to run `gulp start` and be done with it.
+body {
+  display: flex;
+}
 
-- `gulp start`: This is the primary task that will fire up the server and allow you to start building
-- `gulp server`: This will start a Browsersync server with live-reload
-- `gulp sass`: This will compile your SASS
-- `gulp browserify`: This will transpile your JS from ES6 to ES5
-- `gulp watch`: This will start a watcher for files
+.nav {
+  display: flex;
+  justify-content: space between;
+}
 
-## NPM Scripts
+\#photos {
+    display: flex;
+    flex-direction: column;
+}
+-------------------------------------------------------------------------------
+  Resources Dump:
 
-- `npm run test`: This will launch Mocha in your terminal and run any tests
-- `npm run deploy`: This will deploy your application to Surge.sh for you
-- `npm run lint`: This will run ESLint on your `/src/js` folder
+    Font-awesome Icons-
+
+    embed html code for font-awesome:
+      <script src="https://use.fontawesome.com/df1d82e673.js"></script>
+
+            individual font-awesome i tags:
+            twitter: <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            facebook: <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            yelp: <i class="fa fa-yelp" aria-hidden="true"></i>
+            instagram: <i class="fa fa-instagram" aria-hidden="true"></i>
+
+
+    Easy mode Google Maps-
+
+    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJodxCCMkCfjUR9Sb-y3hzoR4&key=${GOOGLE_KEY}" allowfullscreen></iframe>
+
+
+    Main Image-  
+https://s-media-cache-ak0.pinimg.com/originals/99/4e/ab/994eab3066dbb997d3cd69a744d2225b.jpg
