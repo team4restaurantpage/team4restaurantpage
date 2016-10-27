@@ -40,6 +40,11 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+<<<<<<< HEAD
     "jquery": "^3.1.1"
+=======
+    "jquery": "^3.1.1",
+    "lodash": "^4.16.4"
+>>>>>>> 692cc63abf8b7af8f82654fa10a4bca555a0352f
   }
 }
