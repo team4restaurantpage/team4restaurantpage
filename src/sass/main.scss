@@ -1,10 +1,23 @@
-body{
-	text-align: center;
+nav{
+display: flex;
+flex-direction: column;
+align-items: center;
+
 }
 
-#mainimage img{
+#logo {
+	height: 280px;
+	width: 440px;
+	;
+
+}
+
+#mainimage  {
+	display: block;
 	height: 280px;
 	width: 940px;
+	margin: 100px auto;
+
 }
 hr {
 	width: 940px;
@@ -19,7 +32,7 @@ hr {
 
 /* Following affects Reservations form*/
 
-#name {
+input > #name {
   width: 275px;
 }
 
