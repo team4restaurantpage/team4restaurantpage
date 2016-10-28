@@ -28,11 +28,42 @@
     <div class="storeinfo" id="blog"></div>
     <div class="storeinfo" id="special"></div>
     <div class="storeinfo" id="map"></div>
-    <div class="maintabs"> 
+    <div class="maintabs">
       <div class="each-tab" id="story-tab">Our Story</div>
       <div class="each-tab"id="menu-tab">Menu</div>
       <div class="each-tab" id="reserve-tab">Reservations</div>
-      <div class="tab-content"></div>
+      <div class="tab-content">
+        <div class="story-content"></div>
+        <div class="menu-content"></div>
+        <div class="reserve-content">
+          <div class="reservation-container">
+            <form class="reservations">
+
+              <div class="labels"> Full Name</div>
+              <input id="name" type="text" value="">
+
+              <div class="labels"> Number of Guests</div>
+              <input id="number-guests" type="text"  value="">
+
+              <div class="labels"> Date</div>
+              <input id="date" type="text"  value="">
+
+              <div class="labels"> Special Notes</div>
+              <textarea id="special-notes" rows="7" cols="60"></textarea>
+
+              <div class="labels">Seating Preference</div>
+              <select id="seating">
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+                <option value="roof">Roof Patio</option>
+              </select>
+
+              <input id= "reserve-button" type="button" value="Reserve Table">
+
+            </form>
+          </div>
+        </div>
+
     </div>
     <ul id="photos">
     </ul>
@@ -42,4 +73,3 @@
     <script src="https://use.fontawesome.com/df1d82e673.js"></script>
   </body>
 </html>
-
