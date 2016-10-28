@@ -19,6 +19,12 @@ function renderMenu (data) {
   $('.menu-content').append(
     `<div class="entree-selection">${entree.item} - ${entree.price}₩</div>
      <div class="entree-description">${entree.description}</div>
+     <span class="entree-icons">
+        <i class="fa fa-exclamation" id="allergy-icon" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-fire" aria-hidden="true"></i>
+        <i class="fa fa-vimeo" aria-hidden="true"></i>
+      </span>
     `
   )});
   $('.menu-content').append(
