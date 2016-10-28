@@ -51,3 +51,6 @@ body {
     We can change the name of the restaurant and everything, important part is
     the link itself. Quick and easy (and free!) logo builder.
     [Free Logo Services](https://www.freelogoservices.com/step2)
+
+    our story gamer image:
+    https://dqrt72khb0whk.cloudfront.net/uploads/image/file/1174/cropped_IMG_0057.jpg?ts=1426886037
