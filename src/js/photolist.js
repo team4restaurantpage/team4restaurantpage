@@ -3,6 +3,16 @@ import _ from 'lodash';
 
 function renderPhotos (data) {
   var imageArray = data.data.images;
-  var randomSample = _.sampleSize(imageArray, [n=5])
-  console.log(randomSample);
-}
+  var randomSample = _.sampleSize(imageArray, 5)
+  randomSample.forEach(function (image) {
+    $('#photos').append(
+      `<li><img src="${image.link}"/></li>`
+    )});
+};
+
+export { renderPhotos };
+
+// to be added to main.js :
+// import { renderPhotos } from './photolist.js'
+//
+// imgurAPI.then(renderPhotos)
