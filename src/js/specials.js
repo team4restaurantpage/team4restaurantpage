@@ -2,16 +2,37 @@ import $ from 'jquery'
 
 import _ from 'lodash'
 
-import {imgurAPI} from './imgurAPI';
+import {imgurAPI, menuAPI, specialAPI } from './imgurAPI';
 
 function renderSpecial (data) {
-  return $('#special').append(`<img src= '${data.data.images[15].link}'/>`)
+  return $('#special').append(`<header class="info-header">Specials</header><img src= '${data.data.images[15].link}'/>`)
 };
 
 
-export {renderSpecial}
+
+function renderMenuEntree (data) {
+  return data.entrees.map(function(salmon){return salmon.id})
+  return data.entrees.map(function(salmon){return salmon.item})
+};
+
+
+//
+// var filterEntrees = menuAPI.filter(function(data){return data.entrees.id === 25 })
+
+// specialAPI.then(menuAPI).then(filterEntrees)
+
+
+
+
+
+
+
+export {renderSpecial, renderMenuEntree}
+
+
 
 //
 // import {renderSpecial} from './specials'
 //
 // imgurAPI.then(renderSpecial);
+// specialAPI.then (renderSpecialfood);
