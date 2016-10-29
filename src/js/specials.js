@@ -12,16 +12,16 @@ function renderSpecial (data) {
 
 
 // request for the right id and the corresponding item
- var menuID = data.entrees.filter(function(salmon){return salmon.id && salmon.item})
+ var menuID = data.entrees.forEach(function(salmon){return salmon.id && salmon.item})
 
 
 //promise to get the menu item
 
-  return data.menu_item_id
+  var specialID = data.menu_item_id
 
 
 function putTogether () {
-  if (renderMenuEntree )
+  if (`${menuID.id} === $` )
 }
 
 //
