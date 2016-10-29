@@ -4,17 +4,25 @@ import _ from 'lodash'
 
 import {imgurAPI, menuAPI, specialAPI } from './imgurAPI';
 
+//just feeling this particular image
+
 function renderSpecial (data) {
   return $('#special').append(`<header class="info-header">Specials</header><img src= '${data.data.images[15].link}'/>`)
 };
 
 
+// request for the right id and the corresponding item
+ var menuID = data.entrees.filter(function(salmon){return salmon.id && salmon.item})
 
-function renderMenuEntree (data) {
-  return data.entrees.map(function(salmon){return salmon.id})
-  return data.entrees.map(function(salmon){return salmon.item})
-};
 
+//promise to get the menu item
+
+  return data.menu_item_id
+
+
+function putTogether () {
+  if (renderMenuEntree )
+}
 
 //
 // var filterEntrees = menuAPI.filter(function(data){return data.entrees.id === 25 })
