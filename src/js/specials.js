@@ -2,45 +2,28 @@ import $ from 'jquery'
 
 import _ from 'lodash'
 
-import {imgurAPI, menuAPI, specialAPI } from './imgurAPI';
-
-//just feeling this particular image
-
-function renderSpecial (data) {
-  return $('#special').append(`<header class="info-header">Specials</header><img src= '${data.data.images[15].link}'/>`)
-};
-
-
-// request for the right id and the corresponding item
- var menuID = data.entrees.forEach(function(salmon){return salmon.id && salmon.item})
-
-
-//promise to get the menu item
-
-  var specialID = data.menu_item_id
-
-
-function putTogether () {
-  if (`${menuID.id} === $` )
-}
-
-//
-// var filterEntrees = menuAPI.filter(function(data){return data.entrees.id === 25 })
-
-// specialAPI.then(menuAPI).then(filterEntrees)
+import {menuAPI, specialAPI} from './restaurantAPI';
 
 
 
+ function specialBox(salmon){
+   return
+   `<div class="special-main">Today's Special</div>
+   <div class="special-title">${salmon[0].item}</div>
+   <div class= "special-price">${salmon[0].price}</div>
+   <div class="special-description">${salmon[0].description}</div>
+   `
+ }
+
+ //Not certain about indexing^^
+
+ specialAPI.then(function(data){
+   var specialId = data.menu_item_id;
+   menuAPI.then(function(food){
+     var specialMenu = food.entrees.filter(function(specialEntree){
+       return specialEntree.id === specialId})
+     $('.specials').append(specialBox(specialMenu))})
+ })
 
 
-
-
-export {renderSpecial, renderMenuEntree}
-
-
-
-//
-// import {renderSpecial} from './specials'
-//
-// imgurAPI.then(renderSpecial);
-// specialAPI.then (renderSpecialfood);
+//move all to main.js 
