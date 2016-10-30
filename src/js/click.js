@@ -22,15 +22,13 @@ $(".each-tab").click(tabHandler)
 //move all of this to main.js and move below to main.scss //
 
 
-// /* below affects tabbing */
-//
-// .hidden-cont {
-// 	display: none;
-// }
-//
-// .cont {
-// 	display: block;
-// }
+.hidden-cont {
+	display: none;
+}
+
+.cont {
+	display: block;
+}
 
 
 //lastly add hidden-cont as classes to menu-content and reserve-content

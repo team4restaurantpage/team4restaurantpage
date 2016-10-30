@@ -20,5 +20,5 @@ export { renderMap };
 // these will be eventually added to main.js :
 
 // import { renderMap } from './google.js'
-
+//
 // renderMap()
