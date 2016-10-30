@@ -8,7 +8,7 @@ function tabHandler (event) {
   } else if (target.is("#menu-tab")) {
     $( ".menu-content" ).addClass( "cont" );
     $(".story-content").removeClass("cont").addClass("hidden-cont");
-    $(".reserve-content").addClass("hidden-cont");
+    $(".reserve-content").addClass("hidden-cont").removeClass("cont");
   } else if (target.is("#reserve-tab")) {
     $( ".reserve-content" ).addClass( "cont" );
     $(".story-content").removeClass("cont").addClass("hidden-cont");
