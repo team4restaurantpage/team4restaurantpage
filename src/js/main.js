@@ -2,30 +2,25 @@ import $ from 'jquery'
 import _ from 'lodash'
 
 import { menuAPI, newsAPI, specialAPI} from './restaurantAPI'
-
 import {imgurAPI} from './imgurAPI'
 
 import { renderNews } from './news'
 import { renderMap } from './google.js'
 import { renderMenu } from './menutab.js'
 import { renderPhotos } from './photolist.js'
-//news sutff follows
 
 newsAPI.then(renderNews);
+imgurAPI.then(renderSpecialImage);
+menuAPI.then(renderMenu);
+imgurAPI.then(renderPhotos);
+renderMap();
 
-
-//specials stuff follows
-
-//unnecessary request
 
 function renderSpecialImage (data) {
             return $('div#special.storeinfo').prepend(`
               <header class="info-header">Specials</header>
               <img src= '${data.data.images[15].link}'/>`)
-          };
-
-imgurAPI.then(renderSpecialImage);
-
+};
 
 
 specialAPI.then(function(data){
@@ -42,16 +37,6 @@ specialAPI.then(function(data){
   });
 });
 
-//map stuff follows
-
-
-renderMap();
-
-//menu follows
-
-menuAPI.then(renderMenu);
-
-//tabs follow
 
 function tabHandler (event) {
   var target= $(event.target);
@@ -67,9 +52,7 @@ function tabHandler (event) {
     $( ".reserve-content" ).addClass( "cont" );
     $(".story-content").removeClass("cont").addClass("hidden-cont");
     $(".menu-content").removeClass("cont");
-
 }};
 
-$(".each-tab").click(tabHandler);
 
-imgurAPI.then(renderPhotos);
+$(".each-tab").click(tabHandler);
