@@ -37,9 +37,9 @@ specialAPI.then(function(data){
         <div class= "special-price">${specialMenu[0].price}</div>
         <div class="special-description">${specialMenu[0].description}</div>
         `
-    $('.special').append(specialBox)
+    $('#special').append(specialBox)
     })
-})
+});
 
 //map stuff follows
 
