@@ -43,6 +43,11 @@ import { renderMap } from './google.js'
 
 renderMap()
 
+
+
+import { renderMenu } from './menutab.js'
+menuAPI.then(renderMenu)
+
 function tabHandler (event) {
   var target= $(event.target);
   if (target.is("#story-tab")) {
