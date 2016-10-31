@@ -18,14 +18,15 @@ function renderMenu (data) {
   data.entrees.forEach(function (entree) {
   $('.menu-content').append(
     `<div class="each-entree">
-      <div class="entree-selection">${entree.item} - ${entree.price}₩</div>
-      <div class="entree-description">${entree.description}</div>
-      <div class="entree-icons">
-        <i class="fa fa-exclamation" id="allergy" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-fire" aria-hidden="true"></i>
-        <i class="fa fa-vimeo" aria-hidden="true"></i>
+      <div class="entree-selection">${entree.item} - ${entree.price}₩
+        <div class="entree-icons">
+          <i class="fa fa-exclamation" id="allergy" aria-hidden="true"></i>
+          <i class="fa fa-star" id="favorite" aria-hidden="true"></i>
+          <i class="fa fa-fire" id="spicy" aria-hidden="true"></i>
+          <i class="fa fa-vimeo" id="vegetarian" aria-hidden="true"></i>
+        </div>
       </div>
+      <div class="entree-description">${entree.description}</div>
      </div>
 
     `
