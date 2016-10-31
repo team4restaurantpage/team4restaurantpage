@@ -14,6 +14,8 @@ newsAPI.then(renderNews);
 
 //specials stuff follows
 
+//unnecessary request
+
 function renderSpecialImage (data) {
             return $('div#special.storeinfo').append(`
               <header class="info-header">Specials</header>
@@ -21,7 +23,6 @@ function renderSpecialImage (data) {
           };
 
 imgurAPI.then (renderSpecialImage)
-
 
 
 
