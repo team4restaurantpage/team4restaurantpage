@@ -6,6 +6,7 @@ import { menuAPI, newsAPI, specialAPI} from './restaurantAPI'
 import {imgurAPI} from './imgurAPI'
 
 import { renderNews } from './news'
+import { renderMap } from './google.js'
 
 newsAPI.then(renderNews);
 
@@ -18,7 +19,7 @@ function renderSpecialImage (data) {
               <img src= '${data.data.images[15].link}'/>`)
           };
 
-imgurAPI.then (renderSpecialImage)
+imgurAPI.then(renderSpecialImage)
 
 function specialBox(salmon){
   return
@@ -39,7 +40,6 @@ specialAPI.then(function(data){
 
 
 
-import { renderMap } from './google.js'
 
 renderMap()
 
