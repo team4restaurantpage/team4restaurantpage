@@ -6,17 +6,18 @@ align-items: center;
 }
 
 #logo {
-	height: 280px;
-	width: 440px;
+	height: 200px;
+	width: 400px;
+	margin-bottom: 20px;
 	;
 
 }
 
 #mainimage  {
 	display: block;
-	max-height: 280px;
+	max-height: 350px;
 	max-width: 940px;
-	margin: 100px auto;
+	margin: 70px auto;
 	overflow: hidden;
 
 
@@ -125,9 +126,10 @@ textarea {
 	overflow: scroll;
 	.info-header {
 		border-bottom: 1px dotted grey;
-
 	}
+
 }
+
 
 /* Specials */
 
