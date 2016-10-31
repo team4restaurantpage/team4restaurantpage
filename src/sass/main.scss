@@ -66,3 +66,32 @@ textarea {
 }
 
 /* Above affects Reservations form */
+
+.hidden-cont {
+	display: none;
+}
+
+.cont {
+	display: block;
+}
+
+/* mid-bar news---specials---the other things whatever it's call */
+
+.storeinfo{
+	width: 500px;
+
+}
+
+
+/* Specials */
+
+.storeinfo > img {
+	width:400px;
+}
+
+
+/* Map */
+
+div#map.storeinfo {
+	width:400px;
+}
