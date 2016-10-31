@@ -2,11 +2,12 @@ nav{
 display: flex;
 flex-direction: column;
 align-items: center;
+margin-bottom: 25px;
 
 }
 
 #logo {
-	height: 200px;
+	height: 175px;
 	width: 400px;
 	margin-bottom: 20px;
 	;
@@ -19,6 +20,7 @@ align-items: center;
 	max-width: 940px;
 	margin: 70px auto;
 	overflow: hidden;
+	border-radius: 3px;
 
 
 }
@@ -83,7 +85,7 @@ textarea {
 	display: flex;
 	width: 85%;
 	justify-content: space-between;
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 	margin: 20px auto;
 }
 .storeinfo{
@@ -98,11 +100,12 @@ textarea {
 		font-size: 12px;
 		padding: 5px;
 
-
 		.info-header {
 			display: block;
 			padding: 2px 0px;
 			margin-bottom: 5px;
+			border-bottom: 1px dotted grey;
+
 		}
 		#post-title {
 			margin: 2px 0px;
@@ -125,24 +128,33 @@ textarea {
 #blog {
 
 	overflow: scroll;
-	.info-header {
-		border-bottom: 1px dotted grey;
-	}
+
 
 }
 
 
 /* Specials */
+.special-info-container {
+	clear: both;
+}
 
 .storeinfo > img {
 	width: 265px;
 	height: 100px;
 	margin-left: 16px;
+	margin-bottom: 5px;
 }
 
-
 /* Map */
+#google-map {
+	margin-left: 16px;
+	margin-bottom: 5px;
+}
 
+#contact-info li {
+	width: 90px;
+	text-align: center;
+}
 div#map.storeinfo {
 	width:400px;
 }
@@ -156,16 +168,17 @@ div#map.storeinfo {
 			width: 225px;
 			clear: both;
 			margin-bottom: 25px;
+			border-radius: 3px;
 
 		}
 }
 
 .each-tab {
-	height: 35px;
+	height: 25px;
 	width: 90px;
 	font-size: 14px;
 	padding: 5px;
-	padding-top: 20px;
+	padding-top: 15px;
 	display: inline-block;
 	cursor: pointer;
 	border-bottom: none;
@@ -174,23 +187,29 @@ div#map.storeinfo {
 	border-bottom: none;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
-	margin-left: 3px;
+	margin-right: 3px;
 
 }
 
 #tabs-container {
 	display: flex;
 	margin-left: 86px;
+	margin-top: 50px;
+	width: 300px;
 }
 
+#reserve-tab {
+	margin-right: 0px;
+}
 .tab-content {
 	width: 50%;
 	display: inline-block;
 	margin-left: 86px;
-	padding: 10px;
-	font-size: 14px;
-	border: 1px solid grey;
-	border-radius: 3px;
+	padding: 15px;
+	font-size: 12px;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	border-top-left-radius: 0px;
 }
 
 #guzman {
@@ -200,4 +219,89 @@ div#map.storeinfo {
 	margin: 10px;
 	float: left;
 	border-radius: 5px;
+}
+
+.menu-content {
+	header {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	#Beer {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		border-bottom: 1px solid black;
+		font-size: 14px;
+		display: inline-block;
+	}
+	#entrees {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		border-bottom: 1px solid black;
+		font-size: 14px;
+		display: inline-block;
+	}
+	#games {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		border-bottom: 1px solid black;
+		font-size: 14px;
+		display: inline-block;
+	}
+	.each-entree {
+		height: 25px;
+		position: relative;
+		margin: 5px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 680px;
+	}
+	.entree-icons {
+		height: 25px;
+		width: 85px;
+		border-left: 1px solid black;
+		float: right;
+		position: absolute;
+		right: 0;
+		top: -5;
+		margin: 5px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	i {
+		border: 1px solid grey;
+		height: 14px;
+		width: 14px;
+		border-radius: 3px;
+	}
+}
+.beer-selection {
+	margin-top: 10px;
+}
+
+.beer-description {
+	margin-bottom: 10px;
+	margin-left: 10px;
+	font-style: italic;
+	font-size: 10px;
+}
+
+.entree-description {
+	font-size: 10px;
+	font-style: italic;
+	margin-left: 10px;
+}
+.game-description {
+	font-size: 10px;
+	font-style: italic;
+	margin-left: 10px;
+}
+footer {
+	font-size: 10px;
+	margin-left: 105px;
+}
+
+#perhour {
+	font-size: 10px;
+	margin: 5px;
 }

@@ -17,8 +17,17 @@ function renderMenu (data) {
     `<div id="entrees">Entrees 앙트레</div>`);
   data.entrees.forEach(function (entree) {
   $('.menu-content').append(
-    `<div class="entree-selection">${entree.item} - ${entree.price}₩</div>
-     <div class="entree-description">${entree.description}</div>
+    `<div class="each-entree">
+      <div class="entree-selection">${entree.item} - ${entree.price}₩</div>
+      <div class="entree-description">${entree.description}</div>
+      <div class="entree-icons">
+        <i class="fa fa-exclamation" id="allergy" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-fire" aria-hidden="true"></i>
+        <i class="fa fa-vimeo" aria-hidden="true"></i>
+      </div>
+     </div>
+
     `
   )});
   $('.menu-content').append(
