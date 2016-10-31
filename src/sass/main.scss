@@ -10,7 +10,6 @@ margin-bottom: 25px;
 	height: 175px;
 	width: 400px;
 	margin-bottom: 20px;
-	;
 
 }
 
@@ -72,6 +71,25 @@ textarea {
 
 /* Above affects Reservations form */
 
+i.red:hover {
+	border: 2px solid red;
+
+}
+
+i.green:hover{
+	border: 2px solid green;
+
+}
+
+i.gold:hover {
+	border: 2px solid gold;
+
+}
+
+i.black:hover {
+	border: 2px solid black;
+
+}
 .hidden-cont {
 	display: none;
 }
@@ -285,7 +303,7 @@ div#map.storeinfo {
 		padding: 5px;
 	}
 	i {
-		border: 1px solid grey;
+		// border: 1px solid grey;
 		height: 14px;
 		width: 14px;
 		border-radius: 3px;
