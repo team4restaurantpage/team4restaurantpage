@@ -41,6 +41,28 @@ function renderMenu (data) {
      <div class="game-description">${game.description}</div>
     `
   )});
+
+if (data.entrees.allergies === 0) {
+  $('#allergies').addClass(hidden-cont)
+} else {
+  $('#allergies').addClass()
+}
+if (data.entrees.favorites === 0) {
+  $('#allergies').addClass(hidden-cont)
+} else {
+  $('#allergies').addClass()
+}
+if (data.entrees.vegan === 0) {
+  $('#allergies').addClass(hidden-cont)
+} else {
+  $('#allergies').addClass()
+}
+if (data.entrees.spicy === 0) {
+  $('#allergies').addClass(hidden-cont)
+} else {
+  $('#allergies').addClass()
+}
+
 };
 
 
