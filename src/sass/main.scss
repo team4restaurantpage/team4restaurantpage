@@ -76,17 +76,59 @@ textarea {
 }
 
 /* mid-bar news---specials---the other things whatever it's call */
-
+#storeinfo-container {
+	display: flex;
+	width: 85%;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	margin: 20px auto;
+}
 .storeinfo{
-	width: 500px;
+		position: relative;
+    max-width: 300px;
+		max-height: 240px;
+		width: 300px;
+		height: 240px;
+		border: 1px solid lightgrey;
+		display: block;
+		overflow: hidden;
+		font-size: 12px;
+		padding: 5px;
 
+		.info-header {
+			display: block;
+			padding: 2px 0px;
+		}
+		#post-title {
+			margin: 2px 0px;
+			border-bottom: 1px solid black;
+			padding: 2px 0px;
+			display: inline-block
+		}
+
+		#date {
+			position: absolute;
+			top: 7px;
+			right: 5px;
+			font-size: 8px;
+			display: inline;
+			text-align: right;
+
+		}
 }
 
+#blog {
+	overflow: scroll;
+	.info-header {
+	border-bottom: 1px dotted grey;
+	}
+}
 
 /* Specials */
 
 .storeinfo > img {
-	width:400px;
+	width: 265px;
+	height: 100px;
 }
 
 
@@ -96,7 +138,24 @@ div#map.storeinfo {
 	width:400px;
 }
 
-li img {
-	height: 225px;
-	width: 225px;
+#photos {
+		li img {
+			height: 225px;
+			width: 225px;
+			clear: both
+		}
+}
+
+.each-tab {
+	height: 50px;
+	width: 130px;
+	display: inline-block;
+	cursor: pointer;
+	border-bottom: none;
+
+}
+
+#tabscontainer {
+	display: flex;
+	flex-direction: row
 }
