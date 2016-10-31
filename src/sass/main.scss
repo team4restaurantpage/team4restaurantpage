@@ -157,9 +157,15 @@ textarea {
 	margin-bottom: 5px;
 }
 
+#contact-info {
+	padding: 0px;
+}
 #contact-info li {
-	width: 90px;
+	width: 80px;
+	text-align: left;
+	display: inline-block;
 	text-align: center;
+	margin: 0px auto;
 }
 div#map.storeinfo {
 	width:400px;
@@ -230,6 +236,8 @@ div#map.storeinfo {
 	height: 180px;
 	width: 280px;
 	margin: 10px;
+	margin-left: 0px;
+	margin-top: 0px;
 	float: left;
 	border-radius: 5px;
 }
