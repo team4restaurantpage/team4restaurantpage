@@ -39,5 +39,5 @@ export { renderMenu };
 
 // to be added to main.js:
 //
-import { renderMenu } from './menutab.js'
-menuAPI.then(renderMenu)
+// import { renderMenu } from './menutab.js'
+// menuAPI.then(renderMenu)

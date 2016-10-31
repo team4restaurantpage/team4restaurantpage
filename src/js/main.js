@@ -6,6 +6,7 @@ import { menuAPI, newsAPI, specialAPI} from './restaurantAPI'
 import {imgurAPI} from './imgurAPI'
 
 import { renderNews } from './news'
+import { renderMap } from './google.js'
 
 //news sutff follows
 
@@ -20,7 +21,7 @@ function renderSpecialImage (data) {
               <img src= '${data.data.images[15].link}'/>`)
           };
 
-imgurAPI.then (renderSpecialImage)
+imgurAPI.then(renderSpecialImage)
 
 
 
@@ -42,7 +43,6 @@ specialAPI.then(function(data){
 
 //map stuff follows
 
-import { renderMap } from './google.js'
 
 renderMap()
 
