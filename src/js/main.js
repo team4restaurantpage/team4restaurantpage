@@ -8,10 +8,12 @@ import {imgurAPI} from './imgurAPI'
 import { renderNews } from './news'
 import { renderMap } from './google.js'
 
+//news sutff follows
+
 newsAPI.then(renderNews);
 
 
-
+//specials stuff follows
 
 function renderSpecialImage (data) {
             return $('div#special.storeinfo').append(`
@@ -21,32 +23,35 @@ function renderSpecialImage (data) {
 
 imgurAPI.then(renderSpecialImage)
 
-function specialBox(salmon){
-  return
-  `<div class="special-main">Today's Special</div>
-  <div class="special-title">${salmon[0].item}</div>
-  <div class= "special-price">${salmon[0].price}</div>
-  <div class="special-description">${salmon[0].description}</div>
-  `
-}
+
+
 
 specialAPI.then(function(data){
   var specialId = data.menu_item_id;
   menuAPI.then(function(food){
     var specialMenu = food.entrees.filter(function(specialEntree){
       return specialEntree.id === specialId})
-    $('#div#special.storeinfo').append(specialBox(specialMenu))})
-})
+      var specialBox=
+        `<div class="special-main">Today's Special</div>
+        <div class="special-title">${specialMenu[0].item}</div>
+        <div class= "special-price">${specialMenu[0].price}</div>
+        <div class="special-description">${specialMenu[0].description}</div>
+        `
+    $('#special').append(specialBox)
+    })
+});
 
-
+//map stuff follows
 
 
 renderMap()
 
-
+//menu follows
 
 import { renderMenu } from './menutab.js'
 menuAPI.then(renderMenu)
+
+//tabs follow
 
 function tabHandler (event) {
   var target= $(event.target);
