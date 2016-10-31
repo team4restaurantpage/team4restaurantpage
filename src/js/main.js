@@ -8,7 +8,7 @@ import {imgurAPI} from './imgurAPI'
 import { renderNews } from './news'
 import { renderMap } from './google.js'
 import { renderMenu } from './menutab.js'
-
+import { renderPhotos } from './photolist.js'
 //news sutff follows
 
 newsAPI.then(renderNews);
@@ -72,3 +72,5 @@ function tabHandler (event) {
 }};
 
 $(".each-tab").click(tabHandler);
+
+imgurAPI.then(renderPhotos);
