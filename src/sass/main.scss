@@ -36,6 +36,9 @@ hr {
 }
 
 /* Following affects Reservations form*/
+input {
+	display: block;
+}
 
 input > #name {
   width: 275px;

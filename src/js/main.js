@@ -19,7 +19,7 @@ newsAPI.then(renderNews);
 //unnecessary request
 
 function renderSpecialImage (data) {
-            return $('div#special.storeinfo').append(`
+            return $('div#special.storeinfo').prepend(`
               <header class="info-header">Specials</header>
               <img src= '${data.data.images[15].link}'/>`)
           };
@@ -34,9 +34,8 @@ specialAPI.then(function(data){
     var specialMenu = food.entrees.filter(function(specialEntree){
       return specialEntree.id === specialId});
       var specialBox=
-        `<div class="special-main">Today's Special</div>
-        <div class="special-title">${specialMenu[0].item}</div>
-        <div class= "special-price">${specialMenu[0].price}</div>
+        `<div class="special-title">${specialMenu[0].item}..................................${specialMenu[0].price}</div>
+        <br>
         <div class="special-description">${specialMenu[0].description}</div>
         `;
     $('#special').append(specialBox);
