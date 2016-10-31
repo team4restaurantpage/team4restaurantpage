@@ -8,10 +8,12 @@ import {menuAPI, specialAPI} from './restaurantAPI';
 
  function specialBox(salmon){
    return
-   `<div class="special-main">Today's Special</div>
-   <div class="special-title">${salmon[0].item}</div>
-   <div class= "special-price">${salmon[0].price}</div>
-   <div class="special-description">${salmon[0].description}</div>
+   `<div class="special-info-container">
+      <div class="special-main">Today's Special</div>
+      <div class="special-title">${salmon[0].item}</div>
+      <div class= "special-price">${salmon[0].price}</div>
+      <div class="special-description">${salmon[0].description}</div>
+    </div>
    `
  }
 
@@ -26,4 +28,4 @@ import {menuAPI, specialAPI} from './restaurantAPI';
  })
 
 
-//move all to main.js 
+//move all to main.js
