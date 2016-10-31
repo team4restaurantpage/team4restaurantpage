@@ -13,7 +13,7 @@ function renderMenu (data) {
     `<div class="beer-selection">${beer.item} - ${beer.style} - ${beer.price}₩</div>
      <div class="beer-description">${beer.description}</div>`
    )});
-  $('.tab.content').append(
+  $('.menu-content').append(
     `<div id="entrees">Entrees 앙트레</div>`);
   data.entrees.forEach(function (entree) {
   $('.menu-content').append(
