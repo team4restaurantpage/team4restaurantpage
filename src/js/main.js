@@ -7,6 +7,7 @@ import {imgurAPI} from './imgurAPI'
 
 import { renderNews } from './news'
 import { renderMap } from './google.js'
+import { renderMenu } from './menutab.js'
 
 //news sutff follows
 
@@ -23,7 +24,7 @@ function renderSpecialImage (data) {
               <img src= '${data.data.images[15].link}'/>`)
           };
 
-imgurAPI.then(renderSpecialImage)
+imgurAPI.then(renderSpecialImage);
 
 
 
@@ -31,26 +32,25 @@ specialAPI.then(function(data){
   var specialId = data.menu_item_id;
   menuAPI.then(function(food){
     var specialMenu = food.entrees.filter(function(specialEntree){
-      return specialEntree.id === specialId})
+      return specialEntree.id === specialId});
       var specialBox=
         `<div class="special-main">Today's Special</div>
         <div class="special-title">${specialMenu[0].item}</div>
         <div class= "special-price">${specialMenu[0].price}</div>
         <div class="special-description">${specialMenu[0].description}</div>
-        `
-    $('.special').append(specialBox)
-    })
-})
+        `;
+    $('#special').append(specialBox);
+  });
+});
 
 //map stuff follows
 
 
-renderMap()
+renderMap();
 
 //menu follows
 
-import { renderMenu } from './menutab.js'
-menuAPI.then(renderMenu)
+menuAPI.then(renderMenu);
 
 //tabs follow
 
@@ -71,4 +71,4 @@ function tabHandler (event) {
 
 }};
 
-$(".each-tab").click(tabHandler)
+$(".each-tab").click(tabHandler);
