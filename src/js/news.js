@@ -13,7 +13,3 @@ function renderNews(data) {
 };
 
 export { renderNews };
-
-// these need to be added to the main.js file:
-// import { renderNews } from './news'
-newsAPI.then(renderNews);

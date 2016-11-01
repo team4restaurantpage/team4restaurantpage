@@ -5,6 +5,25 @@ align-items: center;
 margin-bottom: 25px;
 
 }
+#twitter-logo {
+	color: #35C3F9;
+	text-decoration: none;
+}
+#facebook-logo {
+	color: #3C5A96;
+	text-decoration: none;
+}
+#yelp-logo {
+	color: #BB3129;
+	text-decoration: none;
+}
+#instagram-logo {
+	color: #C0208D;
+	text-decoration: none;
+	background-color: #fbb536;
+	border-radius: 7px;
+	border: 1px solid #C0208D;
+}
 
 #logo {
 	height: 175px;
@@ -20,6 +39,9 @@ margin-bottom: 25px;
 	margin: 70px auto;
 	overflow: hidden;
 	border-radius: 3px;
+	border: 1px solid grey;
+	padding: 5px;
+	background-color: #FFFBEC;
 
 
 }
@@ -27,14 +49,11 @@ hr {
 	width: 940px;
 
 }
-#logo{
 
-}
 #socialmedia{
 	font-size: 27px;
 }
 
-/* Following affects Reservations form*/
 input {
 	display: block;
 }
@@ -69,8 +88,6 @@ textarea {
   border:black;
 }
 
-/* Above affects Reservations form */
-
 i.red:hover {
 	border: 2px solid red;
 
@@ -98,7 +115,6 @@ i.black:hover {
 	display: block;
 }
 
-/* mid-bar news---specials---the other things whatever it's call */
 #special {
 	text-align: center;
 }
@@ -120,6 +136,7 @@ i.black:hover {
 		overflow: hidden;
 		font-size: 12px;
 		padding: 15px;
+		background-color: #FFFBEC;
 
 		.info-header {
 			display: block;
@@ -152,8 +169,6 @@ i.black:hover {
 	position: relative;
 }
 
-
-/* Specials */
 .special-info-container {
 	clear: both;
 }
@@ -169,7 +184,6 @@ i.black:hover {
 	border-radius: 3px;
 }
 
-/* Map */
 #google-map {
 	margin-left: 16px;
 	margin-bottom: 5px;
@@ -206,7 +220,7 @@ div#map.storeinfo {
 			border-radius: 3px;
 			border: 1px solid grey;
 			padding: 5px;
-
+			background-color: #FFFBEC;
 		}
 }
 
@@ -225,6 +239,7 @@ div#map.storeinfo {
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 	margin-right: 3px;
+	background-color: #FFFBEC;
 
 }
 
@@ -311,7 +326,6 @@ div#map.storeinfo {
 		padding: 5px;
 	}
 	i {
-		// border: 1px solid grey;
 		height: 14px;
 		width: 14px;
 		border-radius: 3px;

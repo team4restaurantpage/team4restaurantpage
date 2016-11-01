@@ -6,7 +6,7 @@ function renderPhotos (data) {
   var randomSample = _.sampleSize(imageArray, 5)
     $('#photos').prepend(
       `<div id="photo-header">Our Photos</div>`
-    )
+    );
   randomSample.forEach(function (image) {
     $('#photos').append(
       `<li><img src="${image.link}"/></li>`

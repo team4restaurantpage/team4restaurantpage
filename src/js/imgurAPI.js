@@ -9,6 +9,5 @@ var imgurAPI = $.ajax ({
               Authorization: `Client-ID ${IMGUR_KEY}`},
           });
 
-//move to main.js
 
 export {imgurAPI}

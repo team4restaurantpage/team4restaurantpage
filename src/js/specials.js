@@ -1,9 +1,7 @@
 import $ from 'jquery'
-
 import _ from 'lodash'
 
 import {menuAPI, specialAPI} from './restaurantAPI';
-
 
 
  function specialBox(salmon){
@@ -13,11 +11,9 @@ import {menuAPI, specialAPI} from './restaurantAPI';
       <div class="special-title">${salmon[0].item}</div>
       <div class= "special-price">${salmon[0].price}</div>
       <div class="special-description">${salmon[0].description}</div>
-    </div>
-   `
- }
+    </div>`;
+ };
 
- //Not certain about indexing^^
 
  specialAPI.then(function(data){
    var specialId = data.menu_item_id;
@@ -25,7 +21,4 @@ import {menuAPI, specialAPI} from './restaurantAPI';
      var specialMenu = food.entrees.filter(function(specialEntree){
        return specialEntree.id === specialId})
      $('.specials').append(specialBox(specialMenu))})
- })
-
-
-//move all to main.js
+ });

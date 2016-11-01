@@ -28,10 +28,8 @@ function renderMenu (data) {
         </div>
       </div>
       <div class="entree-description">${entree.description}</div>
-     </div>
-
-    `
-  )
+     </div>`
+  );
 
     if (entree.allergies === 1) {
       $(`.allergy${entree.id}`).addClass("black")
@@ -45,10 +43,7 @@ function renderMenu (data) {
     if (entree.spicy === 1) {
       $(`.spicy${entree.id}`).addClass("red")
     }
-
 }
-
-
 );
   $('.menu-content').append(
     `<div id="games">Games 계략</div>
@@ -60,16 +55,7 @@ function renderMenu (data) {
      <div class="game-description">${game.description}</div>
     `
   )});
-
-
-
 };
 
 
 export { renderMenu };
-
-
-// to be added to main.js:
-//
-// import { renderMenu } from './menutab.js'
-// menuAPI.then(renderMenu)
