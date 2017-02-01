@@ -1,9 +1,14 @@
+html {
+	background: #F0E7CC;
+}
+
 nav{
 display: flex;
 flex-direction: column;
 align-items: center;
-margin-bottom: 25px;
-
+background-color: white;
+padding-bottom: 15px;
+padding-top: 15px;
 }
 #twitter-logo {
 	color: #35C3F9;
@@ -32,21 +37,23 @@ margin-bottom: 25px;
 
 }
 
-#mainimage  {
-	display: block;
-	max-height: 350px;
-	max-width: 940px;
-	margin: 70px auto;
+.mainimage-container {
 	overflow: hidden;
+	max-height: 400px;
 	border-radius: 3px;
 	border: 1px solid grey;
-	padding: 5px;
 	background-color: #FFFBEC;
+	width: 80%;
+	margin: 20px auto;
+}
 
-
+#mainimage  {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 hr {
-	width: 940px;
+	width: 100%;
 
 }
 
