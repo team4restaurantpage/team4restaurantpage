@@ -19,7 +19,9 @@ renderMap();
 function renderSpecialImage (data) {
             return $('div#special.storeinfo').prepend(`
               <header class="info-header">Specials</header>
-              <img src= '${data.data.images[15].link}'/>`)
+              <div id="special-image-container">
+                <img src= 'images/scallops.jpg'/>
+              </div>`)
 };
 
 
