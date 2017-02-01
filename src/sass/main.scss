@@ -127,7 +127,7 @@ i.black:hover {
 }
 #storeinfo-container {
 	display: flex;
-	width: 100%;
+	width: 102%;
 	justify-content: center;
 	margin-bottom: 100px;
 	margin: 0px auto;
@@ -392,4 +392,8 @@ footer {
 .border-container {
 	display: flex;
 	flex-direction: row;
+}
+
+.white-border {
+	background-color: white;
 }
