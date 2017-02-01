@@ -127,10 +127,12 @@ i.black:hover {
 }
 #storeinfo-container {
 	display: flex;
-	width: 80%;
-	justify-content: space-between;
+	width: 102%;
+	justify-content: center;
 	margin-bottom: 100px;
-	margin: 20px auto;
+	margin: 0px auto;
+	background: white;
+	padding: 20px 0px;
 }
 .storeinfo{
 		position: relative;
@@ -376,4 +378,22 @@ footer {
 
 .story-content > p {
 	line-height: 1.5;
+}
+
+#special-image-container {
+	img {
+		width: 200px;
+		height: auto;
+		border-radius: 5px;
+		border: 1px solid #C3A137;
+	}
+		padding: 5px;
+}
+.border-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.white-border {
+	background-color: white;
 }
